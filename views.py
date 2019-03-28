@@ -8,7 +8,6 @@ class View(RequestHandler):
     SUPPORTED_METHODS = ["POST"]
 
     def initialize(self, conf):
-        self.conf = conf
         self.validator = Validator(conf["fields"], conf["allow_extra"])
 
     def set_default_headers(self):
