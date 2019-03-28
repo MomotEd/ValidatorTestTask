@@ -1,0 +1,32 @@
+patterns:
+  request1:
+    fields:
+      login:
+        required: True
+        type: string
+        min: 5
+        max: 10
+    allow_extra: True
+  request2:
+    fields:
+      login:
+        type: string
+        required: True
+        min: 5
+        max: 10
+      email:
+        type: string
+        min: 12
+        max: 20
+        required: True
+      name:
+        type: string
+        required: False
+        max: 70
+        min: 2
+      age:
+        type: integer
+        min: 14
+        max: 150
+        required: False
+    allow_extra: False
