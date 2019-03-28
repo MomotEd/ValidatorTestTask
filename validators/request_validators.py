@@ -11,14 +11,14 @@ class AbstractViewValidator(ABC):
         """
         Main validation method. Implement your logic here.
         """
-        pass
+        raise NotImplementedError()
 
     @abstractmethod
     def check_extra(self, request):
         """
         Provides possibility to check if extra data in request.
         """
-        pass
+        raise NotImplementedError()
 
 
 class Validator(AbstractViewValidator):
